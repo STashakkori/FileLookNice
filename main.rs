@@ -1,4 +1,4 @@
-// -$t@$h    QVLx Labs
+// -$t@$h     QVLx Labs
 
 use std::io::{self, Read};
 
