@@ -11,7 +11,7 @@ fn main() -> io::Result<()> {
    let split_nl = &buffer.split("\n").collect::<Vec<&str>>();
    
    // Loop through files passed in through stdin
-   for i in 0..split_nl.len() - 1 { // Exclude very last newline as there is nothing after
+   for i in 0..split_nl.len() - 1 { // Exclude very last newline, there is nothing after
 		 if split_nl[i].contains(",") { // See if output contains commas
 			 let split_cma = &split_nl[i].split(",").collect::<Vec<&str>>(); // Tokenize on commas
 			 if split_cma.len() > 1 {
